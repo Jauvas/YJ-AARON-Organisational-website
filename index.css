@@ -220,6 +220,7 @@
 .divs{
     display: flex;
     padding: 50px;
+    margin-left: -10px;
 
 }
 
@@ -803,8 +804,7 @@ footer .copyright{
         width: 50px;
         height: 50px;
         border-radius: 10px;
-        padding-left: 10px;
-        margin: 0;
+        padding-left: 5px;
         transition: 0.5s;
     
     }
@@ -1032,7 +1032,7 @@ footer .copyright{
         text-align: left flex-start;
         display: inline-block;
         flex-direction: row;
-        font-size: 5px;
+        font-size: 1px;
         align-items: baseline;
     }
 
@@ -1044,24 +1044,21 @@ footer .copyright{
 
     .h1{
         text-align: left;
-    }
-    h1 .h1{
-        font-size: 2px;
+        align-items: left   flex-start;
     }
 
     .logodiv{
         margin: 0;
     }
     
-    .h1div{
-        margin-left: 1px;
-      
+    .h1div .h1{
         font-family: 'Times New Roman', Times, serif;
-        align-items: left;
-        margin-left: -10;
         text-align: left;
+        font-size: 10px;
 
     }
+
+    
 
 
 
