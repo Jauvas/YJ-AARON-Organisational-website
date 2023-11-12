@@ -1043,10 +1043,9 @@ footer .copyright{
     
 
     h1{
-        font-weight: 200;
         margin-top: 50px;
-        text-align: left;
-        font-size: 0.9rem;
+        text-align: left;  
+        font-size: 0.0001rem;
     }
 
     .logodiv{
@@ -1055,7 +1054,12 @@ footer .copyright{
     
     .h1div{
         margin-left: 1px;
-        font-size: 0.01rem;
+      
+        font-family: 'Times New Roman', Times, serif;
+        align-items: left;
+        margin-left: -10;
+        text-align: left;
+
     }
 
 
