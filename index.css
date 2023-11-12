@@ -223,8 +223,6 @@
 
 }
 
-
-
 .logo{
     width: 100px;
     height: 100px;
@@ -836,7 +834,7 @@ footer .copyright{
     
     .footer h3{
         color: yellow;
-        font-weight: 600;
+        font-weight: 300px;
         padding-bottom: 15px;
         font-size: 10px;
     }
@@ -849,19 +847,6 @@ footer .copyright{
         cursor: pointer;
         transition: 0.3s;
     }
-    
-    .footer li:hover{
-        color: yellow;
-    }
-    
-    .footer p{
-        color: black;
-    }
-    
-    .footer.subscribe{
-        margin-top: 10px;
-    }
-    
     footer input{
         width: 250px;
         height: 50px;
@@ -872,34 +857,6 @@ footer .copyright{
         border-radius: 5px;
     }
     
-    .footer .subscribe a{
-        text-decoration: none;
-        font-size: 0.5rem;
-        padding: 12px 15px;
-        background-color: white;
-        font-weight: 400;
-        border-radius: 5px;
-    }
-    
-    .footer .subscribe a.yellow{
-        color: blue;
-        background-color: yellow;
-        transition: 0.3s;
-    }
-    
-    .footer .subscribe a.yellow:hover{
-        color: black;
-        background-color: white;
-    }
-    
-    .footer .copyright{
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        flex-wrap: wrap;
-    }
 
     .p_intro{
         width: 60%;
@@ -929,13 +886,15 @@ footer .copyright{
     
     .menu ul li a{
         color: white;
-        font-size: 12px;
+        font-size: 8px;
+        font-weight: 100px;
     }
     
     .menu a{
         text-decoration: none;
         display: left flex-start;
         margin-left: -25px;
+        padding: -25px;
     }
     
     .menu a:hover{
@@ -1047,5 +1006,42 @@ footer .copyright{
         margin-left: -5px;
         border-radius: 10px;
     }
+
+    .device img{
+        width: 80px;
+        height: 80px;
+        border-radius: 5%;
+        transition: 0.5s;
+    
+    }
+
+    .header{
+        background-color: blue;
+        padding: 0;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left flex-start;
+        display: none;
+        flex-direction: row;
+        box-shadow: 2px 2px 10px blue
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+        }
+    
+
+    .h1{
+        font-weight: 200;
+        margin-top: 50px;
+        text-align: left;
+        font-size: 10px;
+    }
+
+
+
+    
+
     
 }
