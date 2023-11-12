@@ -1024,7 +1024,7 @@ footer .copyright{
     
     }
 
-    .header{
+    header{
         background-color: blue;
         padding: 0;
         color: white;
@@ -1032,7 +1032,7 @@ footer .copyright{
         text-align: left flex-start;
         display: inline-block;
         flex-direction: row;
-        font-size: 0.9rem;
+        font-size: 5px;
         align-items: baseline;
     }
 
@@ -1042,10 +1042,11 @@ footer .copyright{
         }
     
 
-    h1{
-        margin-top: 50px;
-        text-align: left;  
-        font-size: 0.0001rem;
+    .h1{
+        text-align: left;
+    }
+    h1 .h1{
+        font-size: 2px;
     }
 
     .logodiv{
