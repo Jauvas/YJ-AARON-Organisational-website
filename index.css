@@ -247,6 +247,7 @@ h1{
     width: 300px;
     border-radius: 10px;
     margin-left: 8px;
+    flex-wrap: flex;
 }
 
 .specs p{
@@ -857,6 +858,24 @@ footer .copyright{
         font-size: large;
         background-color: white;
         background-image: url(homebg.jpeg)
+    }
+
+    .h6{
+        font-size: 20px;
+        color: rgb(255, 228, 196);
+    }
+    
+    .specs{
+        color: deepskyblue;
+        background-color: rgba(128, 128, 128, 0.568);
+        font-size: 15px;
+        width: 300px;
+        border-radius: 10px;
+        margin-left: 8px;
+    }
+    
+    .specs p{
+        margin-left: 2px;
     }
     
     .active{
