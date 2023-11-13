@@ -861,7 +861,7 @@ footer .copyright{
     }
 
     .h6{
-        font-size: 8px;
+        font-size: 5px;
         color: rgb(255, 228, 196);
     }
     
@@ -869,7 +869,7 @@ footer .copyright{
         color: deepskyblue;
         background-color: rgba(128, 128, 128, 0.568);
         font-size: 5px;
-        width: 150px;
+        width: 100px;
         border-radius: 10px;
         margin-left: 8px;
     }
