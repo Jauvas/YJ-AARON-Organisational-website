@@ -254,6 +254,21 @@ h1{
     margin-left: 2px;
 }
 
+.spec1{
+    color: deepskyblue;
+    background-color: rgba(128, 128, 128, 0.568);
+    font-size: 15px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 8px;
+    flex-wrap: flex;
+}
+
+.sp:hover{
+    color: white;
+    text-decoration: none;
+}
+
 
 
 .logo{
@@ -453,6 +468,11 @@ footer .copyright{
         height: 200px; 
         border-radius: 10%;
         transition: 0.5s;
+    }
+
+    .specs.a{
+        width: fit-content;
+        font-size: px;
     }
 
     .menu{
@@ -865,18 +885,11 @@ footer .copyright{
         color: rgb(255, 228, 196);
     }
     
-    .specs{
-        color: deepskyblue;
-        background-color: rgba(128, 128, 128, 0.568);
-        font-size: 5px;
-        width: 100px;
-        border-radius: 10px;
-        margin-left: 8px;
-    }
-    
     .specs p{
         margin-left: 2px;
     }
+
+    
     
     .active{
         color: blue;
