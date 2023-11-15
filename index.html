@@ -12,7 +12,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
-
+    <style>
+        /* Customize the style as needed */
+        body {
+          background-color: #f8f9fa;
+          font-family: 'Arial', sans-serif;
+        }
+        sli
+    
+        .product-container {
+          text-align: center;
+          margin-top: 30px;
+        }
+    
+        .product-img {
+          max-width: 100%;
+          height: auto;
+          border: 2px solid #ddd;
+          border-radius: 8px;
+          padding: 5px;
+          transition: transform 0.3s ease-in-out;
+        }
+    
+        .product-img:hover {
+          transform: scale(1.05);
+        }
+    
+        .slider-container {
+          width: 30%;
+          margin: auto;
+          overflow: hidden;
+          border: 2px solid #ddd;
+          border-radius: 10px;
+          margin-top: 20px;
+        }
+    
+        .slider-wrapper {
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+        }
+    
+        .slider-item {
+          min-width: 100%;
+          box-sizing: border-box;
+        }
+    
+        /* Add more styling as needed */
+    </style>
 </head>
 <body class="body">
     <section>
@@ -50,7 +96,6 @@
                                 <li><a href="oppo.html">Oppo</a></li>
                                 <li><a href="oneplus.html">Oneplus</a></li>
                                 <li><a href="Google.html">Google</a></li>
-                                <li><a href="infinix.html">Infinix</a></li>
                                 <li><a href="tecno.html">Tecno</a></li>
                             </ul>
                         </div>
@@ -111,18 +156,54 @@
                     <li style="--delay: -0.2s; --color: purple"></li>
                     <li style="--delay: -0.2s; --color: hotpink"></li>
                 </ul>
-                <h2>Quality is our pride</h2>
+                <h2 style="color: deepskyblue;">Quality is our pride</h2>
                 
 
-                <p class="p_intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempore,
-                omnis laboriosam iusto nemo at velit? Quaerat,
-                reiciendis inventore quisquam adipisci, voluptatibus sunt 
-                laboriosam amet dolorum recusandae fugiat placeat repellat!</p>
+                <p class="p_intro">
+                    Welcome to KAMPALA ELECTRONICS & SERVICES ARENA,
+                    your one-stop shopping centre for all your tech needs!</p>
+                <p class="p_intro">
+                    We are passionate about providing our customers with the latest and greatest technology, as well as the best possible services.
+                    Whether you're looking for a new smartphone, laptop, smartwatch, tablet, or wireless earbuds, we have something for everyone.
+                    We also offer a wide range of services, including repair, maintenance, software installation and data transfer.
+                </p>     
                 
                 <div class="btn">
                    <img class="intro_pic" src="1.jpg" alt="">
                    <img class="intro_pic" src="2.jpg" alt="">
                 </div>
+
+                <p class="p_intro">
+                    We are committed to providing our customers with the best possible services.
+                    We offer a variety of warranties on our products and services, and we have a team of experts who are always happy to help.
+                </p>
+                <p class="p_intro">
+                    Step into a world of technological wonders<br>
+                    Embrace the future of innovation and connectivity with [Your Company Name], your gateway to the latest tech advancements.
+                    Dive into an immersive experience as we unveil a curated collection of cutting-edge gadgets and solutions, designed to empower your digital lifestyle.
+                </p>
+                <p class="p_intro">
+                    Unleash the power of technology<br>
+                    From smartphones that redefine mobile experiences to laptops that seamlessly integrate into your workflow,
+                    our diverse range of products caters to your every tech need. Explore the versatility of tablets, immerse yourself in the captivating world of smartwatches,
+                    and discover the freedom of wireless earbuds – all meticulously selected to enhance your daily life.
+                </p>
+                <p class="p_intro">
+                    Embrace expert guidance<br>
+                    Our passionate team of tech-savvy experts is here to assist you in navigating the complexities of the digital world.
+                    With their comprehensive knowledge and friendly demeanor, they'll provide personalized recommendations, answer your questions,
+                    and ensure you find the perfect tech solutions to match your lifestyle.
+                </p>
+                <p class="p_intro">
+                    Join the tech revolution<br>
+                    Step into our vibrant store, where innovation awaits. Explore the possibilities,
+                    discover the products that ignite your passion, and experience the transformative power of technology.
+                </p>
+                <p class="p_intro">    
+                    We are located at  Javah House, First Floor,Javah Street, Kampala, Uganda.
+                    You can also contact us by phone on +256772615135 or by email at yjayaaron.mega@gmail.com.
+                    We hope to see you soon!
+                </p>
             </section>
 
             <!--latest gadgets-->
@@ -174,6 +255,45 @@
 
                     
                 </div>
+            </section>
+            
+            <section>
+                <div class=" slider container">
+                    <div class="product-container">
+                      <div class="slider-container">
+                        <div class="slider-wrapper">
+                          <div class="slider-item">
+                            <img src="google-pixel-8-pro-1.jpg" alt="Wireless Earbuds" class="product-img">
+                          </div>
+                          <div class="slider-item">
+                            <img src="apple-iphone-15-pro-max-1.jpg" alt="Tablet" class="product-img">
+                          </div>
+                          <div class="slider-item">
+                            <img src="samsung-galaxy-s23-ultra-5g.jpg" alt="Smartwatch" class="product-img">
+                          </div>
+                          <!-- Add more products as needed -->
+                        </div>
+                      </div>
+                    </div>
+                  
+                  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <script>
+                    // JavaScript for the image slider
+                    const sliderWrapper = document.querySelector('.slider-wrapper');
+                    let currentIndex = 0;
+                  
+                    setInterval(() => {
+                      currentIndex = (currentIndex + 1) % sliderWrapper.children.length;
+                      updateSlider();
+                    }, 3000);
+                  
+                    function updateSlider() {
+                      const translateValue = -currentIndex * 100 + '%';
+                      sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
+                    }
+                </script>
             </section>
 
 
