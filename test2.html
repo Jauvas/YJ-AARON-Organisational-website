@@ -1,117 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Product Showcase</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
-    /* Customize the style as needed */
     body {
-      background-color: #f8f9fa;
       font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .product-container {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .product-img {
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      padding: 5px;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .product-img:hover {
-      transform: scale(1.05);
-    }
-
-    .slider-container {
+    .slide-container {
       width: 80%;
       margin: auto;
       overflow: hidden;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      margin-top: 20px;
+      position: relative;
+      max-height: 200px; /* Set the maximum height for the container */
     }
 
-    .slider-wrapper {
-      display: flex;
+    .slide-content {
       transition: transform 0.5s ease-in-out;
     }
 
-    .slider-item {
-      min-width: 100%;
-      box-sizing: border-box;
+    .reveal-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 10px;
+      cursor: pointer;
     }
-    
 
-    /* Add more styling as needed */
+    .reveal-button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <h1 class="text-center mt-4">Product Showcase</h1>
-
-  <div class="product-container">
-    <div class="slider-container">
-      <div class="slider-wrapper">
-        <div class="slider-item">
-          <img src="airpods2.jpeg" alt="Wireless Earbuds" class="product-img">
-        </div>
-        <div class="slider-item">
-          <img src="tab1.jpeg" alt="Tablet" class="product-img">
-        </div>
-        <div class="slider-item">
-          <img src="sw1.jpeg" alt="Smartwatch" class="product-img">
-        </div>
-        <!-- Add more products as needed -->
-      </div>
-    </div>
+<div class="slide-container">
+  <div class="slide-content">
+    <p>Welcome to Our Product Showcase. Explore our latest products and find the perfect tech companions for your lifestyle.</p>
+    <p>Discover innovative wireless earbuds, powerful tablets, and stylish smartwatches—all designed to enhance your daily experience.</p>
+    <p>Immerse yourself in cutting-edge technology, and stay connected with the latest trends in the digital world.</p>
   </div>
-
-  <div class="row product-container">
-    <div class="col-lg-4">
-      <img src="airpods2.jpeg" alt="Wireless Earbuds" class="product-img">
-      <h3>Wireless Earbuds</h3>
-      <!-- Add product details as needed -->
-    </div>
-    <div class="col-lg-4">
-      <img src="tab1.jpeg" alt="Tablet" class="product-img">
-      <h3>Tablet</h3>
-      <!-- Add product details as needed -->
-    </div>
-    <div class="col-lg-4">
-      <img src="sw1.jpeg" alt="Smartwatch" class="product-img">
-      <h3>Smartwatch</h3>
-      <!-- Add product details as needed -->
-    </div>
-    <!-- Add more products as needed -->
-  </div>
+  <div class="reveal-button" onclick="revealMore()">Reveal More</div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>
-  // JavaScript for the image slider
-  const sliderWrapper = document.querySelector('.slider-wrapper');
-  let currentIndex = 0;
-
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % sliderWrapper.children.length;
-    updateSlider();
-  }, 3000);
-
-  function updateSlider() {
-    const translateValue = -currentIndex * 100 + '%';
-    sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
+  function revealMore() {
+    var slideContent = document.querySelector('.slide-content');
+    slideContent.style.transform = 'translateY(-100%)'; // Slide the content upward
   }
+
+  // Automatically reveal more content after 5 seconds
+  setTimeout(revealMore, 5000);
 </script>
 
 </body>

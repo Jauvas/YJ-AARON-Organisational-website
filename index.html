@@ -56,6 +56,31 @@
           min-width: 100%;
           box-sizing: border-box;
         }
+
+        .slide-container {
+          width: 100%;
+          margin: auto;
+          overflow: hidden;
+          position: relative;
+          max-height: 500px; /* Set the maximum height for the container */
+        }
+
+        .slide-content {
+          transition: transform 0.5s ease-in-out;
+        }
+
+        .reveal-button {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: #007bff;
+          color: #ffffff;
+          cursor: pointer;
+        }
+
+        .reveal-button:hover {
+          background-color: #0056b3;
+        }
     
         /* Add more styling as needed */
     </style>
@@ -173,37 +198,54 @@
                    <img class="intro_pic" src="2.jpg" alt="">
                 </div>
 
-                <p class="p_intro">
-                    We are committed to providing our customers with the best possible services.
-                    We offer a variety of warranties on our products and services, and we have a team of experts who are always happy to help.
-                </p>
-                <p class="p_intro">
-                    Step into a world of technological wonders<br>
-                    Embrace the future of innovation and connectivity with [Your Company Name], your gateway to the latest tech advancements.
-                    Dive into an immersive experience as we unveil a curated collection of cutting-edge gadgets and solutions, designed to empower your digital lifestyle.
-                </p>
-                <p class="p_intro">
-                    Unleash the power of technology<br>
-                    From smartphones that redefine mobile experiences to laptops that seamlessly integrate into your workflow,
-                    our diverse range of products caters to your every tech need. Explore the versatility of tablets, immerse yourself in the captivating world of smartwatches,
-                    and discover the freedom of wireless earbuds – all meticulously selected to enhance your daily life.
-                </p>
-                <p class="p_intro">
-                    Embrace expert guidance<br>
-                    Our passionate team of tech-savvy experts is here to assist you in navigating the complexities of the digital world.
-                    With their comprehensive knowledge and friendly demeanor, they'll provide personalized recommendations, answer your questions,
-                    and ensure you find the perfect tech solutions to match your lifestyle.
-                </p>
-                <p class="p_intro">
-                    Join the tech revolution<br>
-                    Step into our vibrant store, where innovation awaits. Explore the possibilities,
-                    discover the products that ignite your passion, and experience the transformative power of technology.
-                </p>
-                <p class="p_intro">    
-                    We are located at  Javah House, First Floor,Javah Street, Kampala, Uganda.
-                    You can also contact us by phone on +256772615135 or by email at yjayaaron.mega@gmail.com.
-                    We hope to see you soon!
-                </p>
+                <div class="slider-container">
+                    <div class="slide-content">
+                        <p class="p_intro">
+                            We are committed to providing our customers with the best possible services.
+                            We offer a variety of warranties on our products and services, and we have a team of experts who are always happy to help.
+                        </p>
+                        <p class="p_intro">
+                            Step into a world of technological wonders<br>
+                            Embrace the future of innovation and connectivity with [Your Company Name], your gateway to the latest tech advancements.
+                            Dive into an immersive experience as we unveil a curated collection of cutting-edge gadgets and solutions, designed to empower your digital lifestyle.
+                        </p>
+                        <p class="p_intro">
+                            Unleash the power of technology<br>
+                            From smartphones that redefine mobile experiences to laptops that seamlessly integrate into your workflow,
+                            our diverse range of products caters to your every tech need. Explore the versatility of tablets, immerse yourself in the captivating world of smartwatches,
+                            and discover the freedom of wireless earbuds all meticulously selected to enhance your daily life.
+                        </p>
+                        <p class="p_intro">
+                            Embrace expert guidance<br>
+                            Our passionate team of tech-savvy experts is here to assist you in navigating the complexities of the digital world.
+                            With their comprehensive knowledge and friendly demeanor, they'll provide personalized recommendations, answer your questions,
+                            and ensure you find the perfect tech solutions to match your lifestyle.
+                        </p>
+                        <p class="p_intro">
+                            Join the tech revolution<br>
+                            Step into our vibrant store, where innovation awaits. Explore the possibilities,
+                            discover the products that ignite your passion, and experience the transformative power of technology.
+                        </p>
+                        <p class="p_intro">    
+                            We are located at  Javah House, First Floor,Javah Street, Kampala, Uganda.
+                            You can also contact us by phone on +256772615135 or by email at yjayaaron.mega@gmail.com.
+                            We hope to see you soon!
+                        </p>
+                    </div>
+                    <div class="reveal-button" onclick="revealMore()">Reveal More</div>
+                </div>
+
+                <script>
+                    function revealMore() {
+                      var slideContent = document.querySelector('.slide-content');
+                      slideContent.style.transform = 'translateY(-100%)'; // Slide the content upward
+                    }
+                  
+                    // Automatically reveal more content after 5 seconds
+                    setTimeout(revealMore, 5000);
+                  </script>
+
+                
             </section>
 
             <!--latest gadgets-->
@@ -258,42 +300,44 @@
             </section>
             
             <section>
-                <div class=" slider container">
-                    <div class="product-container">
-                      <div class="slider-container">
-                        <div class="slider-wrapper">
-                          <div class="slider-item">
-                            <img src="google-pixel-8-pro-1.jpg" alt="Wireless Earbuds" class="product-img">
+                <div>
+                    <div class=" slider container">
+                        <div class="product-container">
+                          <div class="slider-container">
+                            <div class="slider-wrapper">
+                              <div class="slider-item">
+                                <img src="google-pixel-8-pro-1.jpg" alt="Wireless Earbuds" class="product-img">
+                              </div>
+                              <div class="slider-item">
+                                <img src="apple-iphone-15-pro-max-1.jpg" alt="Tablet" class="product-img">
+                              </div>
+                              <div class="slider-item">
+                                <img src="samsung-galaxy-s23-ultra-5g.jpg" alt="Smartwatch" class="product-img">
+                              </div>
+                              <!-- Add more products as needed -->
+                            </div>
                           </div>
-                          <div class="slider-item">
-                            <img src="apple-iphone-15-pro-max-1.jpg" alt="Tablet" class="product-img">
-                          </div>
-                          <div class="slider-item">
-                            <img src="samsung-galaxy-s23-ultra-5g.jpg" alt="Smartwatch" class="product-img">
-                          </div>
-                          <!-- Add more products as needed -->
                         </div>
-                      </div>
-                    </div>
-                  
-                  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-                <script>
-                    // JavaScript for the image slider
-                    const sliderWrapper = document.querySelector('.slider-wrapper');
-                    let currentIndex = 0;
-                  
-                    setInterval(() => {
-                      currentIndex = (currentIndex + 1) % sliderWrapper.children.length;
-                      updateSlider();
-                    }, 3000);
-                  
-                    function updateSlider() {
-                      const translateValue = -currentIndex * 100 + '%';
-                      sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
-                    }
-                </script>
+                      
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                    <script>
+                        // JavaScript for the image slider
+                        const sliderWrapper = document.querySelector('.slider-wrapper');
+                        let currentIndex = 0;
+                      
+                        setInterval(() => {
+                          currentIndex = (currentIndex + 1) % sliderWrapper.children.length;
+                          updateSlider();
+                        }, 3000);
+                      
+                        function updateSlider() {
+                          const translateValue = -currentIndex * 100 + '%';
+                          sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
+                        }
+                    </script>
+                </div>
             </section>
 
 
