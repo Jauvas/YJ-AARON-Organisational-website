@@ -60,7 +60,7 @@ h1{
 
 .menu a:hover{
     background-color: black;
-    font-size: xx-large;
+    font-size: x-large;
     transition: 0.5s;
     color: yellow;
     text-decoration: none;
